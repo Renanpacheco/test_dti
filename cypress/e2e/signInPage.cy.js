@@ -4,7 +4,7 @@ describe("Verificar elementos da página Sing in", () => {
             "http://www.automationpractice.pl/index.php?controller=authentication&back=my-account"
             );
     })
-    it.skip("Header", () => {
+    it("Header", () => {
         
         cy.get(".banner").should('be.visible');
         cy.get(".shop-phone > .icon-phone").should("be.visible");
@@ -15,7 +15,7 @@ describe("Verificar elementos da página Sing in", () => {
 
     });
 
-    it.skip("Section 1", () => {
+    it("Section 1", () => {
         
         cy.get(".logo").should('be.visible');
         cy.get("#search_query_top").should("be.visible");
@@ -23,7 +23,7 @@ describe("Verificar elementos da página Sing in", () => {
         cy.get('[title="View my shopping cart"]').should("be.visible");
     });
 
-    it.skip("Menu", () => {
+    it("Menu", () => {
         
         cy.get(".sf-menu").should("be.visible");
         cy.contains("Women").should("be.visible");
@@ -33,20 +33,20 @@ describe("Verificar elementos da página Sing in", () => {
         
     });
 
-    it.skip("Navegation", () => {
+    it("Navegação", () => {
         
         cy.get(".home").should("be.visible");
         cy.contains("Authentication").should("be.visible");
         
     });
 
-    it.skip("Page heading", () => {
+    it("Page heading", () => {
         
         cy.get(".page-heading").should("be.visible");
         
     });
 
-    it.skip("Create an account", () => {
+    it("Create an account", () => {
         
         cy.get("#create-account_form").should("be.visible");
         cy.contains("Create an account").should("be.visible");
@@ -61,7 +61,7 @@ describe("Verificar elementos da página Sing in", () => {
         
     });
 
-    it.skip("login", () => {
+    it("login", () => {
         
         cy.get("#login_form").should("be.visible");
         cy.get("#login_form > .page-subheading").should("be.visible");
